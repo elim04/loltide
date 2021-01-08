@@ -31,7 +31,7 @@ const takeUntil = function(array, callback) {
       index = array.indexOf(item);
     }
   }
-  let result = array.slice(0, index)
+  let result = array.slice(0, index);
   return result;
 };
 
