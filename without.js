@@ -36,6 +36,22 @@ const without = function(sourceArr, removeItemArr) {
   return filteredArr;
 };
 
+
+//armin's alternative way - no need for double loop 
+// const without = function(source, itemsToRemove) {
+//   if (eqArrays(source, itemsToRemove)) console.log([]);
+//   let resultArray = [];
+//   for (let i = 0; i < source.length; i++) {
+//     if (!itemsToRemove.includes(source[i])) {
+//       resultArray.push(source[i]);
+//     }
+//   }
+//   return resultArray;
+// };
+
+
+
+
 //test cases for making sure new array is filtered
 console.log(without([1, 2, 3], ["2", 3]));
 console.log(without([1, 2, 3], [1])); // => [2, 3]

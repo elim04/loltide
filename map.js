@@ -27,9 +27,7 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 //it will return an ew array based on the results from the callback function
 
 
-const words = ["ground", "control", "to", "major", "tom"];
-const numbers = [2, 3, 4];
-const phrases = ["hi", "hello", "bonjour"];
+//ACTUAL FUNCTION
 
 const map = function(array, callback) {
   const results = [];
@@ -40,6 +38,10 @@ const map = function(array, callback) {
 };
 
 
+//TEST CODE
+const words = ["ground", "control", "to", "major", "tom"];
+const numbers = [2, 3, 4];
+const phrases = ["hi", "hello", "bonjour"];
 
 const results1 = map(words, word => word[0]);
 

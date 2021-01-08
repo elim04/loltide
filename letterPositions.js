@@ -23,7 +23,6 @@ const eqArrays = function(arrayOne, arrayTwo) {
       return false;
     }
   }
-  
   return true;
 };
 
@@ -51,7 +50,7 @@ const letterPositions = function(sentence) {
 
   for(let i = 0; i < revisedWord.length; i++) {
     if (results[revisedWord[i]]) {
-      results[revisedWord[i]].push(i);
+      results[revisedWord[i]].push(i); //remember if you want the index of the current value you are counting, you can just use i!!! 
 
     } else {
       results[revisedWord[i]] = [];

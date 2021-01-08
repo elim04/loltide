@@ -43,11 +43,11 @@ const middle = function(array) {
     //if array is even then need to push two elements to middle array as both are the "middle"
     middleArray.push(array[midIndex - 1], array[midIndex]);
   } else if (array.length % 2 !== 0) {
-    //only need to push one element because it is odd 
+    //only need to push one element because it is odd
     middleArray.push(array[midIndex]);
   }
   return middleArray;
-}
+};
 
 //TEST CODE
 
