@@ -1,4 +1,4 @@
-//ASSERTION TEST CODE 
+//ASSERTION TEST CODE
 const eqArrays = function(arrayOne, arrayTwo) {
   
   if (arrayOne.length !== arrayTwo.length) {
@@ -28,7 +28,7 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 
 
 const words = ["ground", "control", "to", "major", "tom"];
-const numbers = [2, 3, 4]
+const numbers = [2, 3, 4];
 const phrases = ["hi", "hello", "bonjour"];
 
 const map = function(array, callback) {
@@ -49,7 +49,7 @@ const results2 = map(numbers, function(num) {
 
 const results3 = map(phrases, function(phrase) {
   return phrase + " my name is emily";
-})
+});
 
 assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
 assertArraysEqual(results2, [4, 6, 8]);
