@@ -39,6 +39,11 @@ const middle = function(array) {
   //declare an empty array to push middle elements to
   let middleArray = [];
   //determine if array is odd or even using modulus operator to use if statement and decide if two elements are pushed or one is to middleArray
+  //if array is 1 or 2 in length, return middle array as empty array
+  if (array.length === 1 || array.length === 2) {
+    return middleArray;
+  }
+
   if (array.length % 2 === 0) {
     //if array is even then need to push two elements to middle array as both are the "middle"
     middleArray.push(array[midIndex - 1], array[midIndex]);
@@ -56,3 +61,4 @@ console.log(middle([1, 2, 3, 4, 5])) // => [3]
 
 console.log(assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]));
 console.log(assertArraysEqual(middle(["e", "m", "i", "l", "y"]), ["i"]));
+console.log(assertArraysEqual(middle([1]), []));
