@@ -1,4 +1,5 @@
 
+const assertEqual = require('./assertEqual');
 //tail function for returning all elements in array except first one (index 0)
 
 const tail = function(arrayInput) {
@@ -9,7 +10,6 @@ const tail = function(arrayInput) {
     return tailArray;
   }
 };
-
 
 module.exports = tail;
 
