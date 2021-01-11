@@ -1,21 +1,29 @@
 
-const assertEqual = require('../assertEqual');
-const tail = require('../tail')
 
-//TESTING CODE
+const assert = require('chai').assert;
+const tail  = require('../tail');
 
-let words = ["Yo Yo", "Lighthouse", "Labs"];
+describe('#tail', () => {
 
-//testing to make sure returning the tail end of the array
-const result = tail(["hello", "lighthouse", "labs"]);
-assertEqual(result.length, 2);
-assertEqual(result[0], "lighthouse");
-assertEqual(result[1], "labs");
+  it("returns ['lighthouse', 'labs'] for ['hello', 'lighthouse', 'labs]", () => {
+    assert.deepEqual(tail(['hello', 'lighthouse', 'labs']), ['lighthouse', 'labs']);
+  });
 
-//testing to make sure original array was not modified
-assertEqual(words.length, 3);
+  it("returns [2, 3, 4] for [1, 2, 3, 4]", () => {
+    assert.deepEqual(tail([1, 2, 3, 4]), [2, 3, 4]);
+  });
 
-//testing for one word array, to make sure it returns empty array
-let testOne = ["hi"];
-console.log(tail(testOne));
+  it("it returns [] for ['hi']", () => {
+    assert.deepEqual(tail(['hi']), []);
+  });
+
+  it("it returns 3 as the original array length and no changes are made to original array", () => {
+    let words = ["Yo Yo", "Lighthouse", "Labs"];
+    let newWords = tail(words);
+    assert.strictEqual(words.length, 3);
+  });
+
+});
+
+
 
