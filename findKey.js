@@ -20,6 +20,8 @@ const findKey = function (obj, callback) {
   return undefined;
 };
 
+module.exports = findKey;
+
 //TEST CODE
 
 let result1 = findKey({

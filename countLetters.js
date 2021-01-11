@@ -27,7 +27,7 @@ const countLetters = function(words) {
   return result;
 };
 
-
+module.exports = countLetters; 
 //TEST CODE
 
 const result1 = countLetters("Emily lim is a new coder");

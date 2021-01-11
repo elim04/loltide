@@ -22,7 +22,7 @@ const findKeyByValue = function(obj, keyValue) {
   }
 };
 
-
+module.exports = findKeyByValue;
 //TEST CODE 
 
 const bestTVShowsByGenre = { 

@@ -61,6 +61,7 @@ const letterPositions = function(sentence) {
   console.log(results.f);
   return results;
 };
+module.exports = letterPositions; 
 
 console.log(letterPositions("hello"));
 //TEST CODE 

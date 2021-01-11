@@ -36,6 +36,7 @@ const without = function(sourceArr, removeItemArr) {
   return filteredArr;
 };
 
+module.exports = without;
 
 //armin's alternative way - no need for double loop 
 // const without = function(source, itemsToRemove) {

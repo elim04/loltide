@@ -48,7 +48,7 @@ const eqObjects = function(object1, object2) {
 
 };
 
-
+module.exports = eqObjects; 
 //TEST CODE
 
 //for string based values in objects
