@@ -1,4 +1,3 @@
-const assertEqual = require('./assertEqual');
 
 //head function to get the first item in the first index of the array
 
