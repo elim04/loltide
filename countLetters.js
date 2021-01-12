@@ -1,11 +1,3 @@
-//TEST ASSERTION FUNCTION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ ✅ ✅ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`❌ ❌ ❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
 //ACTUAL FUNCTION
 
@@ -28,13 +20,5 @@ const countLetters = function(words) {
 };
 
 module.exports = countLetters; 
-//TEST CODE
 
-const result1 = countLetters("Emily lim is a new coder");
-console.log(result1);
-assertEqual(result1["e"], 3);
-assertEqual(result1["m"], 2);
-assertEqual(result1["i"], 3);
-assertEqual(result1["k"], undefined);
-assertEqual(result1["w"], 1);
-assertEqual(result1["y"], 1);
+console.log(countLetters("Emily lim is a new coder"));
