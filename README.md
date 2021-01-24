@@ -26,20 +26,20 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(assertArraysEqual)`: asserts if arrays and their contents to see if they are equal
-* `function2(assertEqual)`: compares if expected with actual 
-* `function3(countLetters)`: determines the number of each letter in a string
-* `function4(countOnly)`: counts number of items
-* `function5(eqArrays)`: determines if contents of array are equal to each other
-* `function6(eqObjects)`: determines if objects and their contents are equal to each other
-* `function7(findKey)`: finds a specific key in an object
-* `function8(findKeyByValue)`: finds a key with specific value in an object
-* `function9(flatten)`: turns nested arrays into one array
-* `function10(head)`: returns the 0 index of an array
-* `function11(letterPositions)`: determines the letter position (index) of each letter in a string
-* `function12(map)`: modfiys each item of an array and returns that array with new values
-* `function13(middle)`: returns the middle of an array
-* `function14(tail)`: returns the tail end of an array
-* `function15(takeUntil)`: filters an array until a certain condition is met
-* `function16(without)`: filters an array without a specific item
+* `(assertArraysEqual)`: asserts if arrays and their contents to see if they are equal
+* `(assertEqual)`: compares if expected with actual 
+* `(countLetters)`: determines the number of each letter in a string
+* `(countOnly)`: counts number of items
+* `(eqArrays)`: determines if contents of array are equal to each other
+* `(eqObjects)`: determines if objects and their contents are equal to each other
+* `(findKey)`: finds a specific key in an object
+* `(findKeyByValue)`: finds a key with specific value in an object
+* `(flatten)`: turns nested arrays into one array
+* `(head)`: returns the 0 index of an array
+* `(letterPositions)`: determines the letter position (index) of each letter in a string
+* `(map)`: modfiys each item of an array and returns that array with new values
+* `(middle)`: returns the middle of an array
+* `(tail)`: returns the tail end of an array
+* `(takeUntil)`: filters an array until a certain condition is met
+* `(without)`: filters an array without a specific item
 

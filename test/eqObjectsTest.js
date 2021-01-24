@@ -31,5 +31,21 @@ describe('#eqObjects', () => {
     assert.strictEqual(eqObjects(cd, dc), true);
   });
 
+  //stretch portion - recursive eqObjects DAY 5 week 1
+  it("returns true for matching nested objects as values in both objects being compared", () => {
+    const el = { a: { z: 1 }, b: 2 };
+    const fd = { a: { z: 1 }, b: 2 };
+
+    assert.strictEqual(eqObjects(el, fd), true);
+  })
+
+  it("returns false for nested objects as values that are different in both objects being compared", () => {
+    const mo = { a: { y: 0, z: 1 }, b: 2 };
+    const fo = { a: { z: 1 }, b: 2 };
+
+    assert.strictEqual(eqObjects(mo, fo), false);
+  })
+  
+
 });
 
