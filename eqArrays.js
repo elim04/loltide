@@ -9,9 +9,13 @@ const eqArrays = function(arrayOne, arrayTwo) {
   }
 
   for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i] !== arrayTwo[i]) {
-      return false;
-    }
+    if (Array.isArray(arrayOne[i]) || Array.isArray(arrayTwo[i])) {
+      if (!eqArrays(arrayOne[i], arrayTwo[i])) { //recursive call 
+        return false;
+      }
+    } else if (arrayOne[i] !== arrayTwo[i]) {
+      return false; //base case
+    } 
   }
   
   return true;
